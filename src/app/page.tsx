@@ -1,19 +1,18 @@
-import Head from "next/head";
 import { Header } from "./components/header";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Footer } from "./components/footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Brainwave - Product",
+  description: "Description of your landing page",
+};
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Brainwave - Product</title>
-        <meta name="description" content="Description of your landing page" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Header />
       <main>
         {/* Hero section */}
