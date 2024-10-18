@@ -226,9 +226,8 @@ export default function Home() {
             objectFit="cover"
           />
         </section>
-
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }
