@@ -68,7 +68,7 @@ export default function Home() {
                 <div className="flex items-start gap-x-6">
                   <div className="relative shrink-0">
                     <Image
-                      src="/images/earbuds.webp"
+                      src="/images/earbuds.svg"
                       alt="Earbuds"
                       width={42}
                       height={40}
