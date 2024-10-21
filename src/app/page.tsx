@@ -16,7 +16,7 @@ export default function Home() {
       <Header />
       <main>
         {/* Hero section */}
-        <section className="w-full h-[calc(100vh-72px)] flex items-center flex-col justify-center gap-y-20">
+        <section className="w-full min-h-[calc(100vh-72px)] flex items-center flex-col justify-center gap-y-20 px-4 md:px-0 py-20 md:py-0">
           <Image
             src="/images/airpod.webp"
             alt="Airpods"
@@ -27,8 +27,10 @@ export default function Home() {
             <p className="text-theme-red text-xs font-bold uppercase">
               Non-stop music for long time
             </p>
-            <h1 className="font-bold text-6xl">Sound, that sounds better!</h1>
-            <h3 className="text-xl text-center opacity-70">
+            <h1 className="font-bold text-4xl md:text-6xl text-center">
+              Sound, that sounds better!
+            </h1>
+            <h3 className="text-lg md:text-xl text-center opacity-70">
               With lots of unique blocks, you can easily build a page without
               coding. <br /> Build your next consultancy website within few
               minutes.
@@ -42,28 +44,28 @@ export default function Home() {
         {/* Hero section end */}
 
         {/* listen music anytime */}
-        <section className="w-full h-screen flex items-center bg-theme-gray">
-          <div className="w-2/5 h-full relative">
+        <section className="w-full h-screen flex flex-col gap-y-6 md:flex-row items-center bg-theme-gray">
+          <div className="md:w-2/5 w-full h-full relative">
             <Image
               src="/images/runner.webp"
               alt="A male athlete running"
               fill
-              objectFit="cover"
+              className="object-cover"
             />
           </div>
-          <div className="w-3/5 flex items-center justify-center">
-            <div className="max-w-xl m-auto flex flex-col items-start gap-y-20">
-              <div className="flex flex-col gap-y-6">
-                <h2 className="font-bold text-5xl">
+          <div className="w-full md:w-3/5 flex items-center justify-center p-6 py-20">
+            <div className="max-w-xl m-auto flex flex-col items-start gap-y-10 md:gap-y-20">
+              <div className="flex flex-col gap-y-6 md:text-left">
+                <h2 className="font-bold text-3xl md:text-5xl">
                   Listen music <br />
                   anytime, anywhere.
                 </h2>
-                <p className="text-lg">
+                <p className="text-base md:text-lg">
                   We share common trends and strategies for <br /> improving
                   your rental income.
                 </p>
               </div>
-              <div className="flex items-center justify-between gap-x-4">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-4 flex-wrap">
                 <div className="flex items-start gap-x-6">
                   <div className="relative shrink-0">
                     <Image
@@ -75,10 +77,12 @@ export default function Home() {
                     <div className="absolute bg-primary opacity-30 w-10 h-10 rounded-full top-3 -right-3" />
                   </div>
                   <div className="flex flex-col gap-y-4">
-                    <h3 className="font-bold text-xl">Comfortable Buds</h3>
-                    <p className="text-base opacity-70">
+                    <h3 className="font-bold text-lg md:text-xl">
+                      Comfortable Buds
+                    </h3>
+                    <p className="text-sm md:text-base opacity-70">
                       With lots of unique blocks, you can easily build a page
-                      without coding.{" "}
+                      without coding.
                     </p>
                   </div>
                 </div>
@@ -93,10 +97,12 @@ export default function Home() {
                     <div className="absolute bg-theme-red opacity-30 w-9 h-9 rounded-full top-3 -right-1" />
                   </div>
                   <div className="flex flex-col gap-y-4">
-                    <h3 className="font-bold text-xl">Powerful Bass</h3>
-                    <p className="text-base opacity-70">
+                    <h3 className="font-bold text-lg md:text-xl">
+                      Powerful Bass
+                    </h3>
+                    <p className="text-sm md:text-base opacity-70">
                       With lots of unique blocks, you can easily build a page
-                      without coding.{" "}
+                      without coding.
                     </p>
                   </div>
                 </div>
@@ -107,15 +113,15 @@ export default function Home() {
         {/* listen music anytime end */}
 
         {/* comfortable buds */}
-        <section className="w-full h-screen flex items-center bg-primary text-white ">
-          <div className="w-3/5 h-full flex items-center justify-center">
-            <div className="max-w-md m-auto flex flex-col items-start gap-y-20">
+        <section className="w-full h-screen flex flex-col-reverse md:flex-row items-center bg-primary text-white">
+          <div className="w-full md:w-3/5 h-full flex items-center justify-center p-4 py-20 md:p-6">
+            <div className="max-w-md m-auto flex flex-col items-start gap-y-10 md:gap-y-20">
               <div className="flex flex-col gap-y-6">
-                <h2 className="font-bold text-5xl">
+                <h2 className="font-bold text-3xl md:text-5xl">
                   Comfortable buds <br />
                   with better sound.
                 </h2>
-                <p className="text-lg opacity-65">
+                <p className="text-base md:text-lg opacity-65">
                   We share common trends and strategies for <br /> improving
                   your rental income.
                 </p>
@@ -129,7 +135,7 @@ export default function Home() {
                   className="shrink-0"
                 />
                 <div className="flex flex-col gap-y-4">
-                  <p className="text-xl">
+                  <p className="text-lg md:text-xl">
                     “You made it so simple. My new site is so much faster and
                     easier to work with than my old site.”
                   </p>
@@ -138,43 +144,43 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-2/5 h-full relative">
+          <div className="md:w-2/5 w-full h-full relative">
             <Image
               src="/images/happy-man.webp"
               alt="Man excited wearing earbuds and looking at his laptop"
               fill
-              objectFit="cover"
+              className="object-cover"
             />
           </div>
         </section>
         {/* comfortable buds end */}
 
         {/* trendy designs */}
-        <section className="w-full h-screen flex items-center justify-center bg-theme-midnight text-white relative">
-          <div className="flex flex-col gap-y-20 items-center">
-            <div className="flex flex-col gap-y-10 items-center">
-              <h2 className="font-bold text-5xl text-center">
+        <section className="w-full h-screen flex items-start md:items-center justify-center bg-theme-midnight text-white relative py-20 md:py-0">
+          <div className="flex flex-col gap-y-20 items-center p-4">
+            <div className="flex flex-col gap-y-6 md:gap-y-10 items-center">
+              <h2 className="font-bold text-3xl md:text-5xl text-left md:text-center">
                 Trendy designs with <br /> better sound quality.
               </h2>
-              <p className="text-lg opacity-65 text-center">
+              <p className="text-base md:text-lg opacity-65 text-left md:text-center">
                 We share common trends and strategies for <br /> improving your
                 rental income.
               </p>
             </div>
-            <div className="relative w-full h-80">
+            <div className="relative w-full h-64 md:h-80">
               <Image
                 src="/images/left-earbud.webp"
                 alt="Left earbud"
-                width={214}
-                height={306}
-                className="absolute top-0 left-[10%]"
+                width={170}
+                height={170}
+                className="absolute top-0 !left-[0%] md:!left-[20%]"
               />
               <Image
                 src="/images/right-earbud.webp"
                 alt="Right earbud"
-                width={214}
-                height={306}
-                className="absolute top-1/3 left-1/2"
+                width={170}
+                height={170}
+                className="absolute !top-1/3 !left-[45%] md:left-1/2"
               />
             </div>
           </div>
@@ -187,18 +193,23 @@ export default function Home() {
         {/* trendy designs end */}
 
         {/* products */}
-        <section className="w-full h-screen flex items-center justify-center">
-          <div className="flex flex-col gap-y-20 items-center">
+        <section className="w-full min-h-screen flex items-center justify-center py-20 px-4">
+          <div className="flex flex-col gap-y-10 md:gap-y-20 items-center">
             <div className="flex flex-col gap-y-6">
-              <h2 className="font-bold text-5xl">Get your airpod now.</h2>
-              <p className="text-lg opacity-70 text-center">
+              <h2 className="font-bold text-3xl md:text-5xl">
+                Get your airpod now.
+              </h2>
+              <p className="text-base md:text-lg opacity-70 text-center">
                 We share common trends and strategies for <br /> improving your
                 rental income.
               </p>
             </div>
-            <div className="flex items-center gap-x-40">
+            <div className="flex flex-wrap items-center justify-center gap-y-14 gap-x-40 p-4">
               {products.map((product, index) => (
-                <div key={index} className="flex flex-col gap-y-8 items-center">
+                <div
+                  key={index}
+                  className="flex flex-col gap-y-4 md:gap-y-8 items-center"
+                >
                   <Image
                     src={product.imageSrc}
                     alt={product.name}
